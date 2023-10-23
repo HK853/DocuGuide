@@ -1,0 +1,302 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Mooli&family=Poppins:wght@300;400&display=swap');
+
+/* Reset some default styles for the body and list */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the header and navigation bar */
+ /*header {
+    background-color: #8c3dd1;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    transform: scale(1);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+
+.login, .signup {
+    background-color: #fff;
+    color: #8c3dd1;;
+    border: none;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login:hover, .signup:hover {
+   background-color: #ebd5ff;
+}  */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root { 
+    --bs-dark-color: rgb(234, 202, 24);
+    --bs-mid-color: rgb(243, 217, 67);
+    --bs-light-color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-main{
+   height: 95vh;
+   position: relative;
+}
+
+.bg-color{
+   /* background-color: #8c3dd1; */
+   background: -webkit-linear-gradient(to right, rgb(40, 59, 34), rgb(137, 44, 160),#8c3dd1);
+   background: linear-gradient(to right, rgb(38, 51, 61), rgb(137, 44, 160),#8c3dd1);
+}
+
+.navbar{
+    background-color: #8c3dd1;
+}
+
+.navbar-brand {
+    letter-spacing: 3px;
+    font-size: 30px;
+    color: white;
+}
+
+.container a:hover{
+   text-shadow: 0 0 10px white;
+   color: white;
+}
+
+
+#collapsibleNavId a{
+    font-size: 15px;
+}
+
+#collapsibleNavId a:hover{
+       color: var(--bs-light-color);
+}
+
+.common-heading{
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.01rem !important;
+}
+
+.common-title{
+ margin-bottom: 4.2rem;
+}
+
+/* bg */
+
+.custom-shape-divider-bottom-1696753071 {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+   transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1696753071 svg {
+   position: relative;
+   display: block;
+   width: calc(100% + 1.3px);
+   height: 100px;
+   transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1696753071 .shape-fill {
+   fill: #FFFFFF;
+}
+
+.fixed-top{
+    background: linear-gradient(to right, rgb(38, 51, 61), rgb(137, 44, 160),#8c3dd1);
+    color: #fff;
+    padding: 10px 0;
+   height: 70px;
+}
+
+#collapsibleNavId {
+    /* background: linear-gradient(to right, rgb(38, 51, 61), rgb(137, 44, 160),#8c3dd1); */
+    color: #fff;
+    padding: 10px 0;
+}
+
+
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+
+.login, .signup {
+    background-color: #fff;
+    color: #8c3dd1;
+    border: none;
+    height: 35px;
+    border-radius: 2rem;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login:hover, .signup:hover {
+   background-color: #ebd5ff;
+}  
+
+
+/* home pg */
+
+.home-section .container{
+   display: grid;
+   place-content: center;
+   height: inherit;
+}
+
+.home-section img{
+   max-width: 100%;
+   height: auto;
+   width: 60%;
+   border-radius: .5rem;
+}
+
+.home-section .container .row button{
+  border: none; 
+  border-radius: 1rem;
+  max-width: 100%;
+  height: 40px;
+  width: 30%;
+} 
+
+
+.home-section .container .row h1,p{
+  color: white;
+} 
+
+.home-section .container .row h1{
+    color: var(--bs-light-color);
+ } 
+
+ /* rings */
+
+ .e-rings{
+   padding: 6rem 0 3rem 0!important;
+ }
+
+ .e-rings .container .card-box .buy{
+   border: none;
+   background-color: #ffc800;
+   border-radius: 1rem;
+   height: 30px;
+   width: 50%;
+ }
+
+ 
+ /* bg */
+
+ .about-section{
+   position: relative;
+ }
+
+ .custom-shape-divider-top-1696751608 {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+}
+
+.custom-shape-divider-top-1696751608 svg {
+   position: relative;
+   display: block;
+   width: calc(100% + 1.3px);
+   height: 100px;
+}
+
+.custom-shape-divider-top-1696751608 .shape-fill {
+   fill: #FFFFFF;
+}
+
+.about-section .form-section{
+   width: 50%;
+}
+
+/* features */
+
+.e-rings .card i{
+    font-size: 40px;
+    color: #8c3dd1;
+    padding-top: 10px;
+}

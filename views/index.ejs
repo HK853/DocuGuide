@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GUIDE</title>
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- js -->
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- nav bar start -->
+    <nav class="navbar navbar-expand-lg bg-color pt-3 fixed-top">
+        <div class="container">
+            <a class=" logo navbar-brand" href="#">DocuGuide</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation" onclick="bgchange()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-2 mt-lg-0 px-2">
+                    <li class="nav-item">
+                        <a class="nav-link active px-3 fw-medium  text-light" href="#home" aria-current="page">HOME
+                            <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active  px-3 fw-medium text-light" href="#ring" aria-current="page">ABOUT
+                            <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3 fw-medium  text-light" href="#jhumka"
+                            aria-current="page">FEATURES
+                            <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-3 fw-medium text-light" href="#about" aria-current="page">CONTACT
+                            US<span class="visually-hidden">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item mb-2">
+                        <a href="/login" style="text-decoration: none;"><button class="login">Login</button></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="/signup" style="text-decoration: none;"></a><button class="signup">Sign Up</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- nav bar end -->
+
+
+    <!-- home page start-->
+    <section class="bg-main bg-color home-section" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center">
+                    <h1 class="mt-5 pt-5 fw-bold">DocuGuide</h1>
+                    <p class="fw-lighter fst-italic">DocuGuide can assists users in navigating through the document
+                        application process
+                        by providing step-by-step guides for various documents types such as Passports, Driver Licenses
+                        and so on.
+                    </p>
+
+                    <div class="text-center d-flex justify-content-start mt-3">
+                        <button class="text-capitalize" data-bs-toggle="tooltip" data-bs-title="Talk to us"> Contact
+                            us</button>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-6 d-flex justify-content-center align-items-center mt-4">
+                    <div class="text-center text-lg-end">
+                        <img src="images/doc.gif">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- bg color -->
+        <div class="custom-shape-divider-bottom-1696753071">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <!-- bg color end -->
+    </section>
+    <!-- home page end -->
+
+
+    <!-- rings section start -->
+    <section class="e-rings" id="ring">
+
+        <div class="container text-center fw-bold common-title">
+            <h2 class="common-heading">ABOUT</h2>
+            <hr class="mx-auto" style="width: 15%;">
+        </div>
+
+        <div class="container">
+            <div class="card mx-auto mb-3" style="display:flex; justify-content: space-around;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/about.gif" class="img-fluid rounded-start" alt="GIF">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body m-2">
+                            <p class="card-text text-dark " style="margin-left: 20%;">
+                                <strong style="font-size: 25px;">DocuGuide</strong> is a user-friendly Website designed
+                                to simplify the offer complex
+                                and confusing process of applying for essential documents like passports, driver
+                                licenses, and visas.Our site aims to guide users through every step of the
+                                application process, providing them with the information, tools, and resources they need
+                                to ensure
+                                a sucessful application experience.
+                            </p>
+                            <p class="card-text"><small class="text-body-secondary" style="margin-left: 20%;">"DocuGuide
+                                    helps in Solving Document Application Challenges"</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- rings section ends -->
+
+    <!-- earrings section start -->
+    <section class="e-rings" id="jhumka">
+
+        <div class="container text-center fw-bold common-title">
+            <h2 class="common-heading">FEATURES</h2>
+            <hr class="mx-auto" style="width: 15%;">
+
+            <!-- cards -->
+
+            <div class="row">
+                <div class="col-md-3 py-4">
+                    <div class="card" style="height: 100%;">
+                        <i class="bi bi-check2-circle" id="icon"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Document Type Selection</h5>
+                            <p class="card-text  text-dark"><small class="text-body-secondary">Users can choose from a
+                                    list of document types(e.g passport, visa) to initiate the application
+                                    process.</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-4">
+                    <div class="card" style="height: 100%;">
+                        <i class="bi bi-diagram-3" id="icon"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Step-by-Step Guides</h5>
+                            <p class="card-text text-dark"><small class="text-body-secondary">Users are guided through
+                                    the entire application process, from gathering requirements to submission.</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-4">
+                    <div class="card" style="height: 100%;">
+                        <i class="bi bi-list-check" id="icon"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Document Checklists</h5>
+                            <p class="card-text text-dark"><small class="text-body-secondary">Checklists help users
+                                    assemble all necessary documents and ensure they meet the requirements.</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-4">
+                    <div class="card" style="height: 100%;">
+                        <i class="bi bi-shield-check" id="icon"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Data Security</h5>
+                            <p class="card-text text-dark"><small class="text-body-secondary">Robust encryption and data
+                                    security measures to protect users sensitive information.</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 py-4">
+                    <div class="card" style="height: 100%;">
+                        <i class="bi bi-search" id="icon"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Search Functionality</h5>
+                            <p class="card-text text-dark"><small class="text-body-secondary">A robust search feature
+                                    enables users to quickly find information and requirements for specific document
+                                    types.</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-4">
+                    <div class="card" style="height: 100%;">
+                        <i class="bi bi-people" id="icon"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Offline Access</h5>
+                            <p class="card-text text-dark"><small class="text-body-secondary">Guides, checklists and
+                                    templates can be downloaded for offline access, useful when user lack an internet
+                                    connection.</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-4">
+                    <div class="card" style="height: 100%;">
+                        <i class="bi bi-file-earmark" id="icon"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Document Templates</h5>
+                            <p class="card-text text-dark"><small class="text-body-secondary">Official document
+                                    templates are provided within the app/site to assist users in accurately completing
+                                    required forms.</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-4">
+                    <div class="card" style="height: 100%;">
+                        <i class="bi bi-chat-left-text" id="icon"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Feedback and Support</h5>
+                            <p class="card-text text-dark"><small class="text-body-secondary">Chat-support user inquires
+                                    and assistance.Feedback mechanisms for user to report issues and suggest
+                                    improvements.</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- earrings section ends -->
+
+
+    <!-- about section start-->
+    <section class="about-section text-white  pt-5 contact-section bg-color" id="about">
+
+        <div class="custom-shape-divider-top-1696751608">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="container text-center fw-bold common-title">
+            <h2 class="common-heading text-white pt-5">CONTACT US</h2>
+            <hr class="w-25 mx-auto">
+        </div>
+
+        <div class="container">
+
+            <form class="form-section mx-auto pb-5">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+    </section>
+    <!-- about section ends -->
+
+    <div class="text-center"><small class="text-body-secondary fw-bold">&copy;&nbsp; 2023 HARSH NINAWE | DocuGuide | ALL
+            Rights Reserved. </small></div>
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        function bgchange() {
+            var element = document.getElementById("collapsibleNavId");
+            element.style.background = "radial-gradient(rgb(114, 150, 178), rgb(137, 44, 160))"; // Change this to your desired background color
+        }
+
+    </script>
+
+</body>
+
+</html>
