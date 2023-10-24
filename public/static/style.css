@@ -239,6 +239,11 @@ a:hover {
   width: 30%;
 } 
 
+.home-section .container .row a{
+  text-decoration: none;
+  color: black;
+  } 
+
 
 .home-section .container .row h1,p{
   color: white;

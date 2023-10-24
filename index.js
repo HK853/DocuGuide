@@ -1,7 +1,12 @@
 const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
+const { render } = require("ejs");
 const app = express();
+app.set('view engine', 'ejs')
+
+app.set("views", path.join(__dirname, "views"))
+app.use(express.static(path.join(__dirname, "public")));
 
 
 dbconnect().then(res => { console.log("data base connected") }).catch(err => { console.log("err") })
@@ -17,12 +22,10 @@ const schemaasData = new mongoose.Schema({
 
 const user = mongoose.model("user", schemaasData)
 
-app.set("view engine ", "ejs");
-app.set("views", path.join(__dirname, "views"))
-app.use(express.static(path.join(__dirname, "public")));
 
 
-app.get("/login/", (req, res) => {
+
+app.get("/login", (req, res) => {
     let { Username, password } = req.query
     console.log(Username, password)
     const obj = new user({ Username, password })
@@ -31,18 +34,20 @@ app.get("/login/", (req, res) => {
         await obj.save()
     }
     console.log(password)
-    res.render("login.ejs")
+    res.render("login")
 })
 
 
 
-
+app.get("/signup" , function(req,res){
+    res.render("signup");
+});
 
 
 
 app.listen(8080, () => { console.log("listenning") })
 app.use("/", (req, res) => {
     console.log("main page")
-    res.render("index.ejs")
+    res.render("index")
 
 })
